@@ -129,12 +129,48 @@ body{
     grid-row: 5/6;
 }
 
-/* Manual grid */
+/* Manual grid there should be a faster way to do this */
 
 
-img{
+.sidebar > ul img{
     max-height: 20px;
     justify-self: end;
 }
 
 /* SideBar Ends here */
+
+/* Profile and Search Starts Here Grid Row 1 column 2 onwards */
+.profileUpperContainer img{
+    max-height: 50px;
+}
+
+.profile-info{
+    display: grid;
+}
+
+.profileUpperContainer{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(8,1fr);
+    place-items: center;
+}
+
+.profileUpperContainer h2{
+    grid-column: 8/9;
+}
+
+/* [alt="profileIcon"]{
+    grid-column: 7/8;
+} */
+
+.profileUpperContainer img:last-child {
+    grid-column: 7/8;
+}
+/* .profileUpperContainer:nth-child(-3){
+    grid-column: 6/7;
+} */
+
+.profileUpperContainer input{
+    grid-column: 2/5;
+    width: 90%;
+}
