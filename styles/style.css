@@ -224,6 +224,7 @@ body{
     grid-template-columns: 4fr 1fr;
     padding: 10px;
     background-color: silver;
+    font-family: Norse,'Courier New', Courier, monospace;
 }
 
 .container-three > div:first-child{
@@ -280,3 +281,40 @@ body{
 }
 
 /* Trending Css ends here */
+
+.cards{
+    background-color: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 9px solid var(--color-blue);
+
+}
+
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: end;
+    justify-items: center;
+}
+
+.image-container img{
+    max-height: 30px;
+}
+
+.image-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    
+}
+
+.article-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-three > div > h1{
+    margin-left: 25px;
+}
