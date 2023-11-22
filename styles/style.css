@@ -182,6 +182,7 @@ body{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     background-color: lightgray;
+    padding: 20px;
 }
 
 .profileLowerContainer button{
@@ -189,7 +190,9 @@ body{
     background-color: var(--color-blue);
     margin: 7px;
     font-family: Norse,'Times New Roman', Times, serif;
-    font-size: larger;
+    font-size:  calc(.7vw + .7vh);
+    width: 7vw;
+    height: 7vh;
 }
 
 .profileLowerContainer button:last-child{
@@ -214,3 +217,66 @@ body{
 }
 
 /* Profile bar ends here */
+
+.container-three{
+    display: grid;
+    grid-template-rows: 4fr 3fr;
+    grid-template-columns: 4fr 1fr;
+    padding: 10px;
+    background-color: silver;
+}
+
+.container-three > div:first-child{
+    grid-area: 1/1/3/2;
+}
+
+.Announcements{
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: Norse,'Courier New', Courier, monospace;
+}
+
+.cardAnnouncement{
+    display: grid;
+    font-family: Norse,'Courier New', Courier, monospace;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cardAnnouncement > article{
+    border-bottom: 1px solid grey;
+    padding: 10px 0px;
+}
+
+.cardAnnouncement > article > p{
+    font-size: small;
+}
+/* Trending Css Starts from here */
+
+.meow-chat{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    font-family: Norse,'Courier New', Courier, monospace;
+    
+}
+
+.meow-chat img{
+    grid-row: 1/3;
+    max-height: 70px;
+}
+
+.trending-container{
+    padding: 10px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.container-three > div:last-child{
+    font-family: Norse,'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+/* Trending Css ends here */
